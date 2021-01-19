@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo"><a href="index.html">Danki Code</a></div><!--logo-->
+            <div class="logo"></div><!--logo-->
             <nav class="desktop-menu">
                 <ul>
                     <li><a href="">Home</a></li>
@@ -48,7 +48,7 @@
                     <li>Sites</li>
                     <li>Lojas Virtuais</li>
                     <li>Sistemas</li>
-                    <li>Designer Responsivo</li>
+                    <li>Design Responsivo</li>
                 </ul>
                 <div class="clear"></div><!--clear-->
                 <div class="btn1-texto">Entre em contato</div><!--btn1-texto-->
@@ -88,11 +88,46 @@
                 </div><!--texto-autor-->
             </div><!--sobre-autor-->
             <div class="slider-bullets">
-                <span style="background-color: black;"></span>
+                <span style="background-color: rgb(160,160,160);"></span>
                 <span></span>
                 <span></span>
             </div><!--slider-bullets-->
         </div><!--part2-->
+        <div class="clear"></div><!--clear-->
     </section><!--sessao3-->
+    
+    <section class="sessao4">
+        <div class="container">
+            <div class="form">
+                <h2>Entre em contato</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec luctus turpis. Duis dapibus bibendum lacus, egestas sagittis mi commodo consectetur.</p>
+                <form>
+                    <input type="text" name="nome" placeholder="Nome*">
+                    <input type="text" name="email" placeholder="E-mail*">
+                    <textarea name="mensagem" placeholder="Mensagem*"></textarea>
+                    <div class="clear"></div><!--clear-->
+                    <div><input type="submit" value="Enviar" /></div>
+                </form>
+            </div><!--form-->
+
+            <div class="map-wraper">
+                <h2>Faça uma visita</h2>
+                <div class="map-wraper3">
+                    <div class="map-wraper2">  
+                        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCx8sh_HlLuleKqI2-ujHXj3P4jZfhnSUQ'></script><div class="map" id='gmap_canvas'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style> <a href='http://maps-generator.com/pt'>maps-generator.com</a><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(-27.586811,-48.54557299999999),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-27.586811,-48.54557299999999)});infowindow = new google.maps.InfoWindow({content:'<p style="color:black;text-align:left;font-weight:bold;">Meu Mapa</p><p style="color:black;text-align:left;">Rua Rafael Bandeira Florianópolis</p><br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+                    </div><!--map-wraper2-->
+                </div><!--map-wraper3-->
+            </div><!--map-wraper-->
+            <div class="clear"></div><!--clear-->
+        </div><!--container-->
+    </section><!--sessao4-->
+
+    <footer>
+        <div class="container">
+            <p>Todos os direitos reservados</p>
+            <p>contato@email.com</p>
+            <div class="clear"></div><!--clear-->
+        </div><!--container-->
+    </footer>
 </body>
 </html>
