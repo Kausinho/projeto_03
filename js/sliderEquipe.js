@@ -21,22 +21,27 @@ $(function(){
                 $('.slider-bullets').append('<span></span>');
             }
         }
-
-        function autoPlay(){
-            setInterval(function(){
-                curIndex++;
-                if(curIndex == amt){
-                    curIndex = 0;
-                }
-                goToSlider(curIndex);
-                console.log("chamando");
-            },delay)
-        }
-
-        function goToSlider(curIndex){
-            var offSetX = $('.sobre-autor').eq(curIndex).offset().left;
-
-            $('.scrollEquipe').animate({'scrollLeft':offSetX});
-        }
     }
+
+    function autoPlay(){
+        setInterval(function(){
+            curIndex++;
+            if(curIndex == amt){
+                curIndex = 0;
+            }
+            goToSlider(curIndex);
+            console.log("chamando");
+        },delay)
+    }
+
+    function goToSlider(curIndex){
+        var offSetX = $('.sobre-autor').eq(curIndex).offset().left - $('.scroll-wraper').offset().left;
+        $('.slider-bullets span').css('background-color','rgb(200,200,200)');
+        $('.slider-bullets span').eq(curIndex).css('background-color','rgb(170,170,170)');
+        $('.scrollEquipe').stop().animate({'scrollLeft':offSetX});
+    }
+
+    $(window).resize(function(){
+        $('.scrollEquipe').stop().animate({'scrollLeft':offSetX});
+    });
 });
