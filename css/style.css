@@ -216,6 +216,8 @@ section.sessao1 .container{
     margin-top: 10px;
 }
 
+/**Sessão 3**/
+
 .sessao3{
     width: 100%;
 }
@@ -329,6 +331,44 @@ section.sessao1 .container{
     border-radius: 8px;
     background-color: rgb(200, 200, 200);
 }
+
+/****/
+
+/**Sessão Diferenciais**/
+
+section.diferenciais{
+    padding: 40px 0;
+}
+
+section.diferenciais > .container > h2{
+    text-align: center;
+    font-size: 27px;
+    font-weight: 300;
+    color: #472563;
+}
+
+.box-diferenciais{
+    margin-top: 40px;
+}
+
+.box-single-diferencial{
+    float: left;
+    width: 33.3%;
+    padding: 0 10px;
+}
+
+.box-single-diferencial h2{
+    font-size: 55px;
+    text-align: center;
+    color: #472563;
+}
+
+.box-single-diferencial p{
+    font-size: 15px;
+    color: rgb(100,100,100);
+}
+
+/****/
 
 /*Aqui estou começando a sessão número 4*/
 
@@ -565,6 +605,25 @@ footer p:nth-of-type(2){
         width: 100%;
         height: 100%;
         padding-top: 0;
+    }
+
+    section.diferenciais{
+        background: rgb(220,220,220);
+    }
+
+    .box-diferenciais{
+        margin-top: 0;
+    }
+
+    .box-single-diferencial{
+        width: 100%;
+        margin-top: 12px;
+        text-align: center;
+    }
+
+    .box-single-diferencial p{
+        display: inline-block;
+        max-width: 500px;
     }
 }
 
